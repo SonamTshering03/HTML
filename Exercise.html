@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #time-table, th, td{
+            width: 500px;
+            height: 25px;
+            border-collapse: collapse;
+            border-color: orangered;
+        }
+        th {
+            background-color: lightgrey;
+        }
+        .wtd {
+            background-color: lightblue;
+        }
+        .linux {
+            background-color: lightgreen;
+        }
+        .python {
+            background-color: lightcoral;
+        }
+        .active-directory {
+            background-color: lightyellow;
+        }
+        caption {
+            color: Red;
+            font-size: large;
+            caption-side: top;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" id="time-table">
+        <caption>Time Table</caption>
+        <tr>
+            <th>Days/Time</th>
+            <th>08:00-10:00</th>
+            <th>10:00-12:00</th>
+            <th>13:00-15:00</th>
+            <th>15:00-17:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td class="wtd">WTD</td>
+            <td rowspan="5" id="yellow-color" class="active-directory">Active Directory</td>
+            <td colspan="2" rowspan="2" class="python">Python</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td class="linux">Linux</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td class="python">Python</td>
+            <td class="wtd">WTD</td>
+            <td class="linux">Linux</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td rowspan="2" class="wtd">WTD</td>
+            <td colspan="2" class="linux">Linux</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td id="blue-color" class="wtd">WTD</td>
+            <td id="green-color" class="linux">Linux</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <style>
-        #student_table {
+        #student_table{
             width: 50%;
             height: 200px;
+            text-align: center;
         }
         #student_table, th, td{
             border-collapse: collapse;
+        }
+
+        #spanning-table {
+            border-collapse: collapse;
+            width: 50%;
+            height: 100px;
+            text-align: center;
         }
     </style>
 </head>
@@ -37,5 +45,23 @@
             <td>123467</td>
         </tr>
     </table>
+<br>
+    <div>
+        <table border="1" id="spanning-table">
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
