@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <form action="login.py" method="post" autocomplete="on">
+            <div>
+                <label for="email">Username</label><br>
+                <input type="email" id="email" name="email"> <br>
+            </div>
+            <div>
+                <label for="passwd">Password</label><br>
+                <input type="password" id="passwd"><br><br>
+            </div>
+            <div>
+                <input type="submit" value="login"><br><br>
+            </div>
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <label for="male">Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <input type="image" src="images/login.webp" alt="login" width="70" height="70">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <label for="course">Select your course:</label>
+            <select name="course" id="course">
+                <option value="CSN">CSN</option>
+                <option value="MA">MA</option>
+                <option value="CE">CE</option>
+                <option value="CS">CS</option>
+            </select>
+        </form>
+    </div><br>
+    <div>
+        <textarea name="message" rows="10" cols="30">
+Enter your comment
+</textarea>
+    </div><br>
+    <div>
+        <form>
+            <label for="fruit">Fruits you like.</label><br>
+            <input type="checkbox" id="fruit" name="fruit" value="Apple">
+            <label for="fruit1"> I love apple</label><br>
+            <input type="checkbox" id="fruit2" name="fruit2" value="Mango">
+            <label for="fruit2"> I love Mango</label><br>
+            <input type="checkbox" id="fruit3" name="fruit3" value="Orange">
+            <label for="fruit3"> I love orange</label>
+        </form>
+    </div><br>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username</label><br>
+                <input type="email" id="username"><br>
+                <label for="password">Password</label><br>
+                <input type="text" id="password">
+            </fieldset>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Programming Skill</legend>
+                <input type="checkbox" id="java" name="java" value="Java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="C++" name="C++" value="C++">
+                <label for="C++">C++</label>
+                <input type="checkbox" id="C#" name="C#" value="C#">
+                <label for="C#">C#</label>
+            </fieldset>
+            <fieldset>
+                <legend>Fruit</legend>
+                <label for="fruit">Chooese a fruit: </label>
+                <select name="fruit" id="fruit">
+                    <option value="Banana">Banana</option>
+                    <option value="Mango">Mango</option>
+                </select>
+            </fieldset><br>
+            <textarea name="message" rows="10" cols="40">Enter your comment here</textarea>
+        <div>
+            <input type="submit" value="SEND">
+            <input type="reset" value="RESET">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
