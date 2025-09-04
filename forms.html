@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        .required::after {
+            content: "*";
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -67,14 +73,14 @@ Enter your comment
     <div>
         <form action="">
             <fieldset>
-                <legend>Login</legend>
-                <label for="username">Username</label><br>
+                <legend class="required">Login</legend>
+                <label for="username" class="required">Username</label><br>
                 <input type="email" id="username"><br>
-                <label for="password">Password</label><br>
+                <label for="password" class="required">Password</label><br>
                 <input type="text" id="password">
             </fieldset>
             <fieldset>
-                <legend>Gender</legend>
+                <legend class="required">Gender</legend>
                 <input type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female">
